@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  font-family: "Source Sans Pro";
+}
+
+button,
+button:focus {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 8px 12px;
+}
+
+.navbar_logo {
+  color: red;
+}
+
+.navbar_search {
+  color: white;
+}
+
+.youtube_video {
+  text-align: center;
+  background-color: black;
+}
+
+.youtube_video video {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+}
+
+.youtube_contents {
+  padding: 8px 12px;
+}
+
+.youtube_tag ul {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  list-style: none;
+  color: rgb(84, 84, 204);
+  font-size: small;
+}
+
+.youtube_tag ul li {
+  padding: 4px;
+}
+
+.youtube_contents .youtube_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.youtube_views .viewInfo {
+  font-size: small;
+  color: gray;
+}
+
+.youtube_icons ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  margin: 0px;
+}
+
+.youtube_icons ul div {
+  text-align: center;
+}
+
+.youtube_contents .user_info {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding: 8px;
+}
+
+.youtube_contents .user_info .profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.youtube_contents .user_info .profile img {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  padding-right: 8px;
+}
+
+.youtube_contents .user_info .profile .channel_name {
+  display: flex;
+  flex-direction: column;
+}
+
+.youtube_contents .user_info .profile .channel_name .name {
+  font-size: 15px;
+}
+
+.youtube_contents .user_info .profile .channel_name .subscriber {
+  font-size: 12px;
+  color: darkgray;
+}
+
+.user_info .subscribe {
+  text-transform: uppercase;
+  color: red;
+  font-size: 12px;
+  background-color: white;
+}
+
+.upnext {
+  padding: 8px 12px;
+}
+
+.upnext .item {
+  display: flex;
+}
+
+.upnext .item .img {
+  flex: 1 1 35%;
+}
+
+.upnext .item .img img {
+  width: 100%;
+}
+
+.upnext .item .item_info {
+  padding: 8px;
+  flex: 1 1 60%;
+}
+
+.upnext .item .more_btn {
+  flex: 1 1 5%;
+}
+
+.upnext .item .item_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.upnext .item .item_info .title {
+  font-size: 16px;
+}
+
+.upnext .item .item_info .name,
+.upnext .item .item_info .views {
+  font-size: 8px;
+  color: darkgray;
+}
+
+.infoAndUpNext {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .infoAndUpNext {
+    flex-direction: row;
+    margin: 8px 0;
+  }
+}
